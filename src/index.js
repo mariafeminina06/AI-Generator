@@ -1,5 +1,4 @@
 function displayResponse(response) {
-  console.log(response.data.answer);
   let aiResponseField = document.querySelector("#aiResponse");
   aiResponseField.classList.remove("generating");
 
