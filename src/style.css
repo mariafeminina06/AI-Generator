@@ -1,14 +1,24 @@
 body {
   background: radial-gradient(
-    circle at 1.3% 2.8%,
-    rgb(239, 249, 249) 0%,
-    rgb(182, 199, 226) 100.2%
-  );
+      circle at 7.5% 24%,
+      rgb(1, 22, 64) 0%,
+      rgb(4, 85, 191) 25.5%,
+      rgb(38, 1, 1) 62.3%,
+      rgb(89, 2, 2) 93.8%
+    )
+    black no-repeat;
+  color: aliceblue;
 }
 
+a {
+  color: rgb(5, 151, 242);
+}
 .container {
+  background-color: rgb(0, 0, 0, 0.3);
+  padding: 45px;
   margin: 120px auto;
   max-width: 600px;
+  border-radius: 10px;
 }
 
 header {
@@ -23,7 +33,6 @@ h1 {
 
 form {
   padding: 30px;
-  background-color: white;
   border-radius: 10px;
   display: flex;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
@@ -40,6 +49,7 @@ form {
 }
 
 .submit-button {
+  background-color: rgb(5, 151, 242);
   margin-left: 10px;
   border: none;
   border-radius: 50px;
@@ -51,9 +61,10 @@ form {
 .aiResponse {
   font-size: 14px;
   background-color: white;
+  color: black;
   padding: 20px;
   line-height: 1.5;
-  border-left: 3px solid;
+  border-left: 5px solid rgb(5, 151, 242);
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 }
 
