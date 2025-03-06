@@ -15,7 +15,7 @@ function generateTravel(event) {
   event.preventDefault();
   let destination = document.querySelector("#destination");
   let key = "72e8349d9ea254f743oacta0ef654b86";
-  let prompt = `User Instruction: Please provide popular tourist attractions, popular eateries, local delicacies, modes of transport, local currency and popular hotels in the area while visiting ${destination.value}.`;
+  let prompt = `User Instruction: Please provide list of popular tourist attractions, popular eateries, local delicacies, modes of transport, local currency and popular hotels in the area while visiting ${destination.value}.`;
   let context =
     "You are an AI travel assistant. Please provide a travel guide based on the user instructions provided, providing the answer in basic HTML.  Do not include the ```htm`. Begin with the title `Travel Guide for `. Use a header list for each section of travel information and ol for the information. Be sure to follow the instructions and provide all needed category information.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
@@ -25,7 +25,8 @@ function generateTravel(event) {
   let aiResponseField = document.querySelector("#aiResponse");
   aiResponseField.classList.remove("hidden");
   aiResponseField.classList.add("generating");
-  aiResponseField.innerHTML = `One Moment... ⏳ <br />Generating your Travel Guide for <strong>${destination.value}</strong>`;
+  aiResponseField.innerHTML = `One Moment...⏳<br /> Generating your Travel Guide for <strong>${destination.value}</strong><div class="loader"></div>
+  `;
 }
 
 let form = document.querySelector("form");
