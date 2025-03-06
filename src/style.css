@@ -68,6 +68,15 @@ form {
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 }
 
+.hidden {
+  display: none;
+}
+
+.generating {
+  font-size: 16px;
+  text-align: center;
+}
+
 footer {
   font-style: italic;
   text-align: center;
